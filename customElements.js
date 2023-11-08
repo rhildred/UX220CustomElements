@@ -31,3 +31,20 @@ class CenterElement extends HTMLElement { // (1)
 }
 
 customElements.define("x-center", CenterElement); // (2)
+
+class ImageMapElement extends HTMLElement { // (1)
+
+  constructor() {
+    super();
+  }
+
+  async connectedCallback() {
+    if(!this.ariaExpanded){
+      this.ariaExpanded = true;
+      this.innerHTML = `${this.innerHTML}`;
+    }
+  }
+
+}
+
+customElements.define("x-map", ImageMapElement); // (2)
