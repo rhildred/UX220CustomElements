@@ -1,0 +1,6 @@
+x-center, x-fullyear {
+  visibility: hidden;
+}
+x-center, x-fullyear:defined {
+  visibility: visible;
+}
